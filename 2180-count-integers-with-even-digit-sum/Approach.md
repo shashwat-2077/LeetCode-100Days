@@ -1,4 +1,4 @@
-​## The given code defines a class `CountIntegersWithEvenDigitSum` with a method `countEven` that takes an integer `num` as input and returns the count of integers with an even digit sum that are less than or equal to `num`. ### The approach used in the code can be explained in detailed points as follows:
+​The given code defines a class `CountIntegersWithEvenDigitSum` with a method `countEven` that takes an integer `num` as input and returns the count of integers with an even digit sum that are less than or equal to `num`. The approach used in the code can be explained in detailed points as follows:
 
 1. **Method Overview**: The `countEven` method aims to count the number of integers with an even digit sum within a given range, based on the value of the input integer `num`.
 
