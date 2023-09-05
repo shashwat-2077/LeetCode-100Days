@@ -1,5 +1,4 @@
 class Solution {
-  // Same as 926. Flip String to Monotone Increasing
   public int minimumDeletions(String s) {
     int dp = 0; // # of chars to be deleted to make subString so far balanced
     int countB = 0;
