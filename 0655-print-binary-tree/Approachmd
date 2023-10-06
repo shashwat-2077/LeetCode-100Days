@@ -1,0 +1,25 @@
+## ​The code is an implementation of a method `printTree` within a class called `PrintBinaryTree`. This method is used to print a binary tree in a 2D string representation where each node in the tree is represented as a string, and the tree is balanced as much as possible.
+
+### Here's a detailed explanation of the approach used in the code:
+
+1. **Finding Maximum Height**: The `maxHeight` method is used to find the maximum height of the binary tree. It recursively calculates the height by traversing the tree. If the tree is empty (i.e., the root is `null`), it returns 0. Otherwise, it returns 1 plus the maximum height of its left and right subtrees. This height is used to determine the number of rows in the 2D representation.
+
+2. **Determining Width**: The `n` variable is calculated as `(2^m) - 1`, where `m` is the maximum height of the tree. This determines the width of the 2D representation. It represents the maximum possible number of nodes at the bottom row.
+
+3. **Initializing the Result**: An `ArrayList` called `ans` is created to store the final 2D representation of the binary tree. A `List` called `row` is also created to represent a row of the tree with empty strings initially.
+
+4. **Filling the Result with Empty Strings**: A loop initializes each row of the `ans` list with `n` empty strings. This is done to create the initial structure of the 2D representation.
+
+5. **Depth-First Search (DFS)**: The `dfs` method is a depth-first search function that populates the `ans` list with the values of the tree nodes in their appropriate positions.
+
+    - **Base Case**: If `root` is `null`, it means there's no node at the current position, so nothing is done, and the function returns.
+    
+    - **Finding Midpoint**: The midpoint of the current row is calculated as `(left + right) / 2`, which represents the horizontal position for the current node.
+
+    - **Setting Node Value**: The value of the current `root` node is converted to a string (`Integer.toString(root.val)`) and is set in the `ans` list at the current `row` and `mid` position. This places the node's value in the appropriate position in the 2D representation.
+
+    - **Recursive Calls**: The `dfs` function is called recursively for the left and right subtrees of the current node. The row number is incremented (`row + 1`), and the left and right boundaries are adjusted accordingly. This continues until all nodes have been processed.
+
+6. **Returning the Result**: After populating the `ans` list with node values, the method returns the `ans` list, which now contains the 2D representation of the binary tree.
+
+## In summary, this code uses a recursive depth-first search approach to create a 2D representation of a binary tree, ensuring that the tree is balanced, and empty spaces are appropriately represented as empty strings. The final representation is returned as a list of lists of strings (`List<List<String>>`).
