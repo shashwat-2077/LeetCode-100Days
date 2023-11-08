@@ -1,4 +1,4 @@
-​## The code is an implementation of the "Minimum Spanning Tree" problem, which aims to find the minimum cost to connect all the given points in a graph. The code uses a heuristic algorithm to achieve this, and it's based on the concept of repeatedly connecting the two closest points until all points are connected.
+## The code is an implementation of the "Minimum Spanning Tree" problem, which aims to find the minimum cost to connect all the given points in a graph. The code uses a heuristic algorithm to achieve this, and it's based on the concept of repeatedly connecting the two closest points until all points are connected.
 
 ### Here's a step-by-step explanation of the approach:
 
